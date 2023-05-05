@@ -40,6 +40,9 @@
             this.textBoxEXCLUIR = new System.Windows.Forms.TextBox();
             this.labelEXCLUIR = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.dataGridViewPRODUTOS = new System.Windows.Forms.DataGridView();
+            this.buttonALTERAR = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPRODUTOS)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxDESCRICAO
@@ -99,7 +102,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(322, 252);
+            this.button1.Location = new System.Drawing.Point(241, 252);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 36);
             this.button1.TabIndex = 6;
@@ -155,6 +158,26 @@
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 11;
             // 
+            // dataGridViewPRODUTOS
+            // 
+            this.dataGridViewPRODUTOS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPRODUTOS.Location = new System.Drawing.Point(795, 25);
+            this.dataGridViewPRODUTOS.Name = "dataGridViewPRODUTOS";
+            this.dataGridViewPRODUTOS.Size = new System.Drawing.Size(331, 371);
+            this.dataGridViewPRODUTOS.TabIndex = 12;
+            this.dataGridViewPRODUTOS.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewPRODUTOS_CellMouseClick);
+            // 
+            // buttonALTERAR
+            // 
+            this.buttonALTERAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonALTERAR.Location = new System.Drawing.Point(492, 252);
+            this.buttonALTERAR.Name = "buttonALTERAR";
+            this.buttonALTERAR.Size = new System.Drawing.Size(150, 36);
+            this.buttonALTERAR.TabIndex = 13;
+            this.buttonALTERAR.Text = "alterar";
+            this.buttonALTERAR.UseVisualStyleBackColor = true;
+            this.buttonALTERAR.Click += new System.EventHandler(this.buttonALTERAR_Click);
+            // 
             // FormLISTA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,6 +185,8 @@
             this.BackgroundImage = global::CADASTRO_PRODUTOS.Properties.Resources.download;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1165, 450);
+            this.Controls.Add(this.buttonALTERAR);
+            this.Controls.Add(this.dataGridViewPRODUTOS);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.labelEXCLUIR);
             this.Controls.Add(this.textBoxEXCLUIR);
@@ -176,6 +201,7 @@
             this.Controls.Add(this.textBoxDESCRICAO);
             this.Name = "FormLISTA";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPRODUTOS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,6 +221,8 @@
         private System.Windows.Forms.TextBox textBoxEXCLUIR;
         private System.Windows.Forms.Label labelEXCLUIR;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dataGridViewPRODUTOS;
+        private System.Windows.Forms.Button buttonALTERAR;
     }
 }
 
