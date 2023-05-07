@@ -160,5 +160,6 @@ namespace CADASTRO_PRODUTOS
             textBoxCATEGORIA.Text = dataGridViewPRODUTOS.CurrentRow.Cells[2].Value.ToString();
             textBoxPRECO.Text = dataGridViewPRODUTOS.CurrentRow.Cells[3].Value.ToString();
         }
+
     }
 }

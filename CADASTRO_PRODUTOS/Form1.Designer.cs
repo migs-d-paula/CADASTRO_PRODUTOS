@@ -165,6 +165,7 @@
             this.dataGridViewPRODUTOS.Name = "dataGridViewPRODUTOS";
             this.dataGridViewPRODUTOS.Size = new System.Drawing.Size(331, 371);
             this.dataGridViewPRODUTOS.TabIndex = 12;
+            this.dataGridViewPRODUTOS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPRODUTOS_CellContentClick);
             this.dataGridViewPRODUTOS.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridViewPRODUTOS_CellMouseClick);
             // 
             // buttonALTERAR
